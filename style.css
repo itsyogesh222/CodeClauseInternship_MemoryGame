@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('background.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: white;
+}
+
+
+.score-panel {
+  margin: 10px;
+  font-size: 18px;
+  color: white; 
+}
+
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: #444;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds subtle shadow */
+}
+
+.card.matched {
+  background: green;
+}
+
+.card.flipped {
+  background: orange;
+}
